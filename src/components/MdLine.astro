@@ -1,0 +1,8 @@
+---
+const { as = "span", ...attrs } = Astro.props;
+const Tag = as;
+---
+
+<Tag class="text-terminal-gray/50 min-h-[calc(var(--spacing)*7)] leading-7" {...attrs}>
+    <slot />
+</Tag>

@@ -1,0 +1,12 @@
+---
+const { text, class: className, as = "span", ...attrs } = Astro.props;
+const Tag = as;
+---
+
+<Tag class={`whitespace-nowrap inline-flex gap-0 ${className}`} {...attrs}>
+    **<span class="text-terminal-gray">
+        <slot>
+            {text}
+        </slot>
+    </span>**
+</Tag>

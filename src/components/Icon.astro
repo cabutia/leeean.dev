@@ -1,0 +1,18 @@
+---
+import linkedin from "@/assets/icons/linkedin.svg?raw";
+import chat from "@/assets/icons/chat.svg?raw";
+import instagram from "@/assets/icons/instagram.svg?raw";
+import language from "@/assets/icons/language.svg?raw";
+
+const { name, ...attrs } = Astro.props;
+const icons: Record<string, any> = {
+    linkedin,
+    chat,
+    instagram,
+    language,
+};
+
+const icon = icons[name];
+---
+
+<div set:html={icon} {...attrs} />

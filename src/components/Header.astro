@@ -1,0 +1,62 @@
+---
+import Icon from "./Icon.astro";
+import Typewrite from "./Typewrite.astro";
+import HeaderBg from "./HeaderBg.astro";
+import Heading from "./Heading.astro";
+---
+
+<div class="w-full h-[100vh] bg-background flex-center relative">
+    <HeaderBg class="absolute inset-0 opacity-30" />
+    <div class="container px-8 mx-auto relative z-10">
+        <div class="w-full flex flex-col">
+            <Heading title="Hey there" />
+            <h1 class="text-7xl font-bold">
+                I'm Lean, <br />a <span class="text-primary-100"
+                    ><Typewrite
+                        words={[
+                            "Software Engineer",
+                            "Problem Solver",
+                            "Tech Enthusiast",
+                            "Team Player",
+                        ]}
+                        id="title"
+                    /></span
+                >
+                <span
+                    class="h-2 w-10 inline-block relative -left-2 -bottom-2 bg-primary-100 animate-pulse"
+                ></span>
+            </h1>
+
+            <div class="flex items-center mt-6">
+                <a
+                    href="#"
+                    class="h-14 px-6 flex-center rounded-full bg-primary-300 text-primary-900 font-medium tracking-wider hover:bg-primary-200"
+                >
+                    Let's get in touch
+                </a>
+                <div
+                    class="h-14 -ml-6 pl-8 flex items-center rounded-r-full bg-primary-100/10"
+                >
+                    <a
+                        href="#"
+                        class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10"
+                    >
+                        <Icon name="linkedin" class="text-primary-50" />
+                    </a>
+                    <a
+                        href="#"
+                        class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10"
+                    >
+                        <Icon name="chat" class="text-primary-50" />
+                    </a>
+                    <a
+                        href="#"
+                        class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10"
+                    >
+                        <Icon name="instagram" class="text-primary-50" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

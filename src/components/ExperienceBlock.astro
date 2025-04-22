@@ -1,0 +1,54 @@
+---
+import TrWindow from "./TrWindow.astro";
+import TrHostname from "./TrHostname.astro";
+import TrOutput from "./TrOutput.astro";
+import MdContent from "@/components/MdContent.astro";
+import MdBold from "@/components/MdBold.astro";
+import MdLine from "@/components/MdLine.astro";
+import MdHeading from "@/components/MdHeading.astro";
+import MdListItem from "@/components/MdListItem.astro";
+import { filename } from "@/utils/strings";
+
+const { title, company, website, dates, stack, class: classname } = Astro.props;
+---
+
+<section itemscope itemtype="https://schema.org/JobPosting" class={`w-full flex flex-col font-mono ${classname}`}>
+    <TrWindow title={`cat ${filename(company)}_experience.md`}>
+        <TrHostname>
+            cat
+            <span class="text-terminal-gray">{filename(company)}_experience.md</span>
+        </TrHostname>
+        <TrOutput>
+            <MdContent>
+                <MdLine>
+                    <MdHeading as="h2"> {title} </MdHeading>
+                </MdLine>
+                <MdLine itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
+                    <span itemprop="name" class="text-terminal-blue">({company})</span>
+                    <a href={website} class="text-terminal-purple">
+                        [<span itemprop="url">{website}</span>]
+                    </a>
+                </MdLine>
+                <MdLine>
+                    <MdBold itemprop="datePosted" text={dates} />
+                </MdLine>
+                <MdLine />
+                <MdLine>
+                    <MdHeading as="h3">Responsabilidades & logros</MdHeading>
+                </MdLine>
+                <MdLine itemprop="description">
+                    <slot />
+                </MdLine>
+                <MdLine />
+                <MdLine>
+                    <MdHeading as="h3">Stack Involucrado</MdHeading>
+                </MdLine>
+                <MdLine>
+                    <ul class="flex gap-x-2 flex-wrap">
+                        {stack.map((tech: string, i: number) => <li>{`${tech}${i < stack.length && ","}`}</li>)}
+                    </ul>
+                </MdLine>
+            </MdContent>
+        </TrOutput>
+    </TrWindow>
+</section>

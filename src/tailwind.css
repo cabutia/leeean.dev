@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+}
+
+@theme {
+    /* Color customization */
+    --color-primary-50: #f9fbea;
+    --color-primary-100: #f0f6d1;
+    --color-primary-200: #e1eea8;
+    --color-primary-300: #cce274;
+    --color-primary-400: #bad557;
+    --color-primary-500: #97b72b;
+    --color-primary-600: #75921e;
+    --color-primary-700: #596f1c;
+    --color-primary-800: #48591b;
+    --color-primary-900: #3d4c1b;
+    --color-primary-950: #1f290a;
+    --color-primary: var(--color-primary-400);
+
+    --color-background: #121212;
+
+    --color-terminal-red: #f88f8f;
+    --color-terminal-orange: #fbbd84;
+    --color-terminal-yellow: #fcea7e;
+    --color-terminal-green: #a3e9a3;
+    --color-terminal-teal: #95eeee;
+    --color-terminal-blue: #93d1f3;
+    --color-terminal-purple: #da9dfb;
+    --color-terminal-pink: #f9a8d4;
+    --color-terminal-gray: #e2e2e2;
+    --color-terminal-black: #101010;
+    --color-terminal-white: #ffffff;
+
+    /* Font customization */
+    --font-body: "Faculty Glyphic";
+
+    /* Animations */
+    --animate-blink: blink 1s infinite;
+
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}

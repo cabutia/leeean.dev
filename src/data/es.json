@@ -1,0 +1,212 @@
+{
+    "experiences": [
+        {
+            "company": "Vizio",
+            "website": "https://vizio.com",
+            "title": "Sr. Software Engineer",
+            "dates": "Junio 2024 - Presente",
+            "stack": [
+                "Svelte + SvelteKit",
+                "React",
+                "Redux Toolkit",
+                "Loki",
+                "GraphQL",
+                "Node.js",
+                "Python",
+                "FastAPI",
+                "MySQL",
+                "PostgreSQL",
+                "AWS",
+                "Terraform"
+            ],
+            "details": [
+                "Lideré el desarrollo y diseño de la aplicación PoC utilizando tecnologías como Svelte, SvelteKit, React, TypeScript, Python, Terraform, AWS y Figma. La aplicación fue aprobada para su integración en el sistema operativo de televisores de Vizio.",
+                "Definí las funcionalidades, requisitos e infraestructura de la aplicación, y completé el diseño visual utilizando Figma, actuando como único desarrollador y diseñador en este proyecto.",
+                "Colaboré estrechamente con el equipo de producto para definir características y recopilar feedback de los stakeholders, así como con los equipos de backend y datos para la integración de APIs y el sistema de recomendaciones basado en IA.",
+                "Contribuí a la formación del equipo, ayudando a establecer una base sólida para el desarrollo continuo del proyecto."
+            ]
+        },
+        {
+            "company": "Siemens",
+            "website": "https://new.siemens.com",
+            "title": "Software Engineer",
+            "dates": "Febrero 2023 - Junio 2024",
+            "stack": [
+                "Typescript",
+                "Javascript",
+                "Python",
+                "Flutter",
+                "React",
+                "Vue",
+                "Angular",
+                "Figma",
+                "Shell scripting",
+                "AWS Lambdas",
+                "AWS EC2",
+                "AWS Route53",
+                "AWS S3",
+                "AWS EKS",
+                "AWS ECR",
+                "Terraform",
+                "Gitlab Pipelines",
+                "Jenkins",
+                "NexusIQ",
+                "Nexus",
+                "Sonarqube"
+            ],
+            "details": [
+                "Fui responsable del desarrollo proyecto, integrado con Auth0, de centralizacion de autenticacion y autorizacion de todos los demas proyectos, plataformas, sistemas e incluso dispositivos fisicos como sensores y luces.",
+                "Forme parte del desarrollo de un ecosistema de Onboarding cuyo objetivo era el alta y administracion de usuarios dentro de una plataforma de trackeo de tags, la calibracion de los sensores que harian el trackeo de los tags, la recoleccion de datos y la configuracion de cada uno de los espacios a monitorear.",
+                "Ademas, fui responsable de la migracion completa de AngularJs a React de la plataforma de reportes sobre la utilizacion de espacios basado en el trackeo de tags. Tambien trabaje sobre el desarrollo del sistema de tracking.",
+                "Por ultimo, estandarice el desarrollo de todo lo referido a la UI y el frontend a lo largo de la empresa, creando las primeras librerias para diferentes lenguajes y la primer shared library de la empresa."
+            ]
+        },
+        {
+            "company": "Agile Engine | Cardlytics",
+            "website": "https://www.cardlytics.com",
+            "title": "Senior Frontend Engineer",
+            "dates": "Enero 2020 - Diciembre 2023",
+            "stack": [
+                "Typescript",
+                "Vue 2 + Vue 3",
+                "Vuex",
+                "Pinia",
+                "Figma",
+                "Vuetify",
+                "Material Design",
+                "Websockets",
+                "Ping",
+                "NPM/Yarn",
+                "Shell scripting",
+                "TailwindCSS",
+                "Octopus",
+                "LaunchDarkly",
+                "GraphQL",
+                "Apollo",
+                "Storybook",
+                ".NET",
+                "PostgreSQL",
+                "Nginx",
+                "Jira"
+            ],
+            "details": [
+                "Participe en el desarrollo la plataforma de administracion y gestion de campañas de publicidad, ads y audiencias de Cardlytics.",
+                "Ademas, desarrolle la plataforma utilizada internamente en Agile Engine para RRHH en la que se administraba y monitoreaba el progreso de los empleados dentro de la empresa desde su ingreso hasta su retiro, y las comunicaciones de los mismos."
+            ]
+        },
+        {
+            "company": "Estandar Crypto",
+            "website": "https://estand.ar",
+            "title": "Senior Software Engineer",
+            "dates": "Septiembre 2021 - Julio 2023",
+            "stack": [
+                "Typescript",
+                "Vue 3",
+                "Pinia",
+                "SASS",
+                "TailwindCSS",
+                "TailwindUI",
+                "Figma",
+                "NodeJS",
+                "PHP + Laravel/Lumen",
+                "Websockets",
+                "Firebase",
+                "NPM/Yarn",
+                "Shell scripting",
+                "githooks",
+                "LaunchDarkly",
+                "Sentry",
+                "Aerospike",
+                "MySQL",
+                "PostgreSQL",
+                "Nginx",
+                "Servidores Linux",
+                "Trello",
+                "Jira"
+            ],
+            "details": [
+                "Desarrolle desde cero la plataforma \"El Arca 2050\", una e-wallet bi-monetaria que funciona con ARS y una crypto privada llamada BOC.",
+                "Se desarrollo tambien una ticketera para dar soporte a los diferentes tipos de usuarios.",
+                "El e-commerce incluye un sistema de publicidad interno propio para que los vendedores tengan acceso a un posicionamiento prioritario basado en localizacion, rango etario y actividad de los compradores."
+            ]
+        },
+        {
+            "company": "Bitpatagonia",
+            "website": "https://bitpatagonia.com",
+            "title": "Fullstack Developer",
+            "dates": "Marzo 2020 - Junio 2021",
+            "stack": ["Javascript", "Typescript", "React", "NodeJS", "AWS", "Vue", "Python"],
+            "details": [
+                "Desarrolle la plataforma desde la cual se controlaban todos los ASICS encargados de la mineria en 4 diferentes ubicaciones geograficas.",
+                "La plataforma estaba dividida en dos partes, por un lado la obtencion de datos del hardware, como temperatura, performance, etc. incluyendo la misma arquitectura para controlarlos.",
+                "Por otro lado, el desarrollo de un dashboard que utilizaron tanto los encargados del mantenimiento de las plantas a nivel fisico, como los desarrolladores, los dueños de la empresa y los inversores."
+            ]
+        },
+        {
+            "company": "Digital House",
+            "website": "https://www.digitalhouse.com",
+            "title": "Sr. Fullstack Developer & Profesor",
+            "dates": "Marzo 2018 - Enero 2020",
+            "stack": [
+                "Typescript",
+                "Javascript",
+                "Vue",
+                "React",
+                "AWS",
+                "NodeJS",
+                "PHP + Laravel",
+                "Lumen",
+                "Git",
+                "Python"
+            ],
+            "details": [
+                "Lidere y participe del desarrollo de las plataformas internas de gestion de inscripciones, finanzas, clases y contenidos desde cero, asi como la migracion del codigo de terceros a un codebase propio.",
+                "Ademas, desarrolle el sistema integrado con los molinetes de la entrada del campus para que pueda funcionar con un lector QR.",
+                "Participe en el desarollo del playground de los estudiantes en el cual ven y administran su progreso dentro de los diferentes cursos.",
+                "Fui profesor en dos comisiones de la carrera de desarrollo fullstack, y participe en la confeccion del programa para las carreras de desarrollo fullstack y backend."
+            ]
+        },
+        {
+            "company": "Acamica",
+            "website": "https://acamica.com",
+            "title": "Profesor",
+            "dates": "Junio 2017 - Marzo 2018",
+            "stack": [],
+            "details": [
+                "Dicte las clases del curso de fullstack en cuatro comisiones, preparando las clases y el programa.",
+                "Fui mentor de los estudiantes acompanandolos en su desarrollo tanto personal como profesional durante y despues del curso.",
+                "Prepare el contenido multimedia que fue utilizado por varias comisiones en simultaneo."
+            ]
+        },
+        {
+            "company": "Ceres Solutions",
+            "website": "https://www.ceressolutions.com",
+            "title": "Fullstack Developer",
+            "dates": "Febrero 2015 - Marzo 2019",
+            "stack": [
+                "Typescript",
+                "Javascript",
+                "Ansible",
+                "Linux servers",
+                "Git",
+                "Githooks",
+                "PHP + Laravel",
+                "Lumen",
+                "Symfony",
+                "Vue",
+                "Vuetify",
+                "Vuex",
+                "C++",
+                "Python",
+                "NodeJS",
+                "Google Cloud Platform"
+            ],
+            "details": [
+                "Encargado de implementaciones personalizadas para cada cliente basado en los datos pre-existentes y sus necesidades.",
+                "Desarrolle la plataforma de payroll tanto para uso interno como de los clientes desde cero, migrando una arquitectura legacy a microservicios.",
+                "Fui encargado del mantenimiento de toda la infraestructura de la empresa.",
+                "Implemente buenas practicas y metodologias agiles a lo largo de la empresa, tanto en la rama del software como operacional."
+            ]
+        }
+    ]
+}

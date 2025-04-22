@@ -1,0 +1,7 @@
+---
+import HeaderBackground from "@/assets/header-background.svg?raw";
+
+const { ...attrs } = Astro.props;
+---
+
+<div set:html={HeaderBackground} {...attrs} />
