@@ -6,7 +6,6 @@ import MdContent from "@/components/MdContent.astro";
 import MdBold from "@/components/MdBold.astro";
 import MdLine from "@/components/MdLine.astro";
 import MdHeading from "@/components/MdHeading.astro";
-import MdListItem from "@/components/MdListItem.astro";
 import { filename } from "@/utils/strings";
 
 const { title, company, website, dates, stack, class: classname } = Astro.props;
@@ -30,7 +29,7 @@ const { title, company, website, dates, stack, class: classname } = Astro.props;
                     </a>
                 </MdLine>
                 <MdLine>
-                    <MdBold itemprop="datePosted" text={dates} />
+                    <MdBold itemprop="datePosted" text={`${dates.from} - ${dates.to ? dates.to : "Presente"}`} />
                 </MdLine>
                 <MdLine />
                 <MdLine>

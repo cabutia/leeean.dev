@@ -20,7 +20,8 @@ const jsonLd = {
             name: job.company,
             sameAs: job.website,
         },
-        startDate: "2024-06",
+        startDate: job.dates.from,
+        ...(job.dates.to && { endDate: job.dates.to }),
         description: job.details.join(". "), // or join multiple
     })),
 };
