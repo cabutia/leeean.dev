@@ -13,7 +13,7 @@ const { title, company, website, dates, stack, class: classname } = Astro.props;
 
 <section itemscope itemtype="https://schema.org/JobPosting" class={`w-full flex flex-col font-mono ${classname}`}>
     <TrWindow title={`cat ${filename(company)}_experience.md`}>
-        <TrHostname>
+        <TrHostname company={filename(company)}>
             cat
             <span class="text-terminal-gray">{filename(company)}_experience.md</span>
         </TrHostname>
