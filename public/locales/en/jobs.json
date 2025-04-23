@@ -1,0 +1,236 @@
+{
+    "list": [
+        {
+            "company": "Vizio",
+            "website": "https://vizio.com",
+            "title": "Sr. Software Engineer",
+            "dates": {
+                "from": "2024-06",
+                "to": null
+            },
+            "stack": [
+                "Svelte + SvelteKit",
+                "React",
+                "Redux Toolkit",
+                "Loki",
+                "GraphQL",
+                "Node.js",
+                "Python",
+                "FastAPI",
+                "MySQL",
+                "PostgreSQL",
+                "AWS",
+                "Terraform"
+            ],
+            "details": [
+                "Led the design and development of the PoC application using technologies such as Svelte, SvelteKit, React, TypeScript, Python, Terraform, AWS, and Figma. The app was approved for integration into Vizio's TV operating system.",
+                "Defined features, requirements, and infrastructure for the app, while also handling its visual design in Figma. Served as the sole developer and designer on the project.",
+                "Worked closely with the product team to define features and gather feedback from stakeholders, and collaborated with backend and data teams for API integration and the AI-powered recommendation system.",
+                "Contributed to team formation, helping establish a solid foundation for the project's ongoing development."
+            ]
+        },
+        {
+            "company": "Siemens",
+            "website": "https://new.siemens.com",
+            "title": "Software Engineer",
+            "dates": {
+                "from": "2023-02",
+                "to": "2024-06"
+            },
+            "stack": [
+                "Typescript",
+                "Javascript",
+                "Python",
+                "Flutter",
+                "React",
+                "Vue",
+                "Angular",
+                "Figma",
+                "Shell scripting",
+                "AWS Lambdas",
+                "AWS EC2",
+                "AWS Route53",
+                "AWS S3",
+                "AWS EKS",
+                "AWS ECR",
+                "Terraform",
+                "Gitlab Pipelines",
+                "Jenkins",
+                "NexusIQ",
+                "Nexus",
+                "Sonarqube"
+            ],
+            "details": [
+                "Led the development of an authentication and authorization centralization project, integrated with Auth0, which served all other projects, platforms, systems, and even physical devices like sensors and lights.",
+                "Contributed to the development of an onboarding ecosystem designed for user registration and management within a tag tracking platform, sensor calibration, data collection, and space configuration.",
+                "Oversaw the full migration of a legacy AngularJS reporting platform to React, used for space utilization tracking. Also contributed to the development of the tracking system itself.",
+                "Standardized frontend and UI development across the organization, creating the first internal libraries for multiple languages and the company's first shared UI library."
+            ]
+        },
+        {
+            "company": "Agile Engine | Cardlytics",
+            "website": "https://www.cardlytics.com",
+            "title": "Senior Frontend Engineer",
+            "dates": {
+                "from": "2020-01",
+                "to": "2023-12"
+            },
+            "stack": [
+                "Typescript",
+                "Vue 2 + Vue 3",
+                "Vuex",
+                "Pinia",
+                "Figma",
+                "Vuetify",
+                "Material Design",
+                "Websockets",
+                "Ping",
+                "NPM/Yarn",
+                "Shell scripting",
+                "TailwindCSS",
+                "Octopus",
+                "LaunchDarkly",
+                "GraphQL",
+                "Apollo",
+                "Storybook",
+                ".NET",
+                "PostgreSQL",
+                "Nginx",
+                "Jira"
+            ],
+            "details": [
+                "Participated in the development of the Cardlytics platform for managing advertising campaigns, ads, and audiences.",
+                "Also developed an internal HR platform for Agile Engine, which managed employee progress from onboarding to offboarding and facilitated internal communication."
+            ]
+        },
+        {
+            "company": "Estandar Crypto",
+            "website": null,
+            "title": "Senior Software Engineer",
+            "dates": {
+                "from": "2021-09",
+                "to": "2023-07"
+            },
+            "stack": [
+                "Typescript",
+                "Vue 3",
+                "Pinia",
+                "SASS",
+                "TailwindCSS",
+                "TailwindUI",
+                "Figma",
+                "NodeJS",
+                "PHP + Laravel/Lumen",
+                "Websockets",
+                "Firebase",
+                "NPM/Yarn",
+                "Shell scripting",
+                "githooks",
+                "LaunchDarkly",
+                "Sentry",
+                "Aerospike",
+                "MySQL",
+                "PostgreSQL",
+                "Nginx",
+                "Linux Servers",
+                "Trello",
+                "Jira"
+            ],
+            "details": [
+                "Built from scratch the 'El Arca 2050' platform, a dual-currency e-wallet supporting ARS and a private cryptocurrency called BOC.",
+                "Developed a ticketing system for supporting various user types.",
+                "Created an internal advertising system for the e-commerce platform, allowing sellers to gain prioritized visibility based on location, age range, and buyer activity."
+            ]
+        },
+        {
+            "company": "Bitpatagonia",
+            "website": "https://bitpatagonia.com",
+            "title": "Fullstack Developer",
+            "dates": {
+                "from": "2020-03",
+                "to": "2021-06"
+            },
+            "stack": ["Javascript", "Typescript", "React", "NodeJS", "AWS", "Vue", "Python"],
+            "details": [
+                "Developed the platform used to monitor and control ASIC miners across four different geographic locations.",
+                "The platform had two main components: one for collecting hardware data such as temperature and performance, and another for controlling the devices.",
+                "Also built a dashboard used by maintenance staff, developers, executives, and investors for real-time insights and operational decisions."
+            ]
+        },
+        {
+            "company": "Digital House",
+            "website": "https://www.digitalhouse.com",
+            "title": "Sr. Fullstack Developer & Instructor",
+            "dates": {
+                "from": "2018-03",
+                "to": "2020-01"
+            },
+            "stack": [
+                "Typescript",
+                "Javascript",
+                "Vue",
+                "React",
+                "AWS",
+                "NodeJS",
+                "PHP + Laravel",
+                "Lumen",
+                "Git",
+                "Python"
+            ],
+            "details": [
+                "Led and contributed to the development of internal platforms for enrollment, finance, classes, and content management, and migrated from third-party code to an in-house codebase.",
+                "Developed a system integrated with the campus turnstiles to enable access via QR code.",
+                "Helped build the student playground system, which tracks course progress and learning paths.",
+                "Taught in two cohorts of the fullstack development program and helped design the curriculum for both fullstack and backend development tracks."
+            ]
+        },
+        {
+            "company": "Acamica",
+            "website": "https://acamica.com",
+            "title": "Instructor",
+            "dates": {
+                "from": "2017-06",
+                "to": "2018-03"
+            },
+            "stack": [],
+            "details": [
+                "Taught the fullstack development course across four cohorts, preparing class content and program structure.",
+                "Mentored students, supporting both their technical and professional growth during and after the course.",
+                "Produced multimedia content used across multiple cohorts simultaneously."
+            ]
+        },
+        {
+            "company": "Ceres Solutions",
+            "website": "https://www.ceressolutions.com",
+            "title": "Fullstack Developer",
+            "dates": {
+                "from": "2015-02",
+                "to": "2019-03"
+            },
+            "stack": [
+                "Typescript",
+                "Javascript",
+                "Ansible",
+                "Linux servers",
+                "Git",
+                "Githooks",
+                "PHP + Laravel",
+                "Lumen",
+                "Symfony",
+                "Vue",
+                "Vuetify",
+                "Vuex",
+                "C++",
+                "Python",
+                "NodeJS",
+                "Google Cloud Platform"
+            ],
+            "details": [
+                "Delivered tailored implementations for each client based on their existing data and business needs.",
+                "Designed and built a payroll platform for internal use and for clients, transitioning from a legacy system to microservices.",
+                "Maintained the company’s full infrastructure stack.",
+                "Implemented best practices and agile methodologies across both software and operational teams."
+            ]
+        }
+    ]
+}

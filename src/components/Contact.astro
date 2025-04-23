@@ -1,0 +1,103 @@
+---
+import { data } from "@/data";
+import Icon from "./Icon.astro";
+---
+
+<!-- Contact form -->
+<div class="w-full flex flex-col">
+    <div class="container mx-auto">
+        <form action="https://api.web3forms.com/submit" method="POST" class="w-full">
+            <input type="hidden" name="access_key" value="422df993-72da-4e7d-bc80-846002d11743" />
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
+            <div class="w-full flex flex-col gap-12">
+                <h3 class="text-5xl">
+                    I'd love to hear from you<br /><span class="text-primary-100 text-6xl">Let's get in touch! 👌🏽</span>
+                </h3>
+                <div class="bg-primary-900/20 p-12 rounded-3xl grid grid-cols-2 gap-8">
+                    <div class="w-full flex flex-col gap-4">
+                        <div class="w-full flex flex-col gap-2">
+                            <label for="name" class="text-primary-100">Your name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="What's your name?"
+                                required
+                                class="bg-primary-900/50 text-primary-50 px-6 h-14 rounded-xl"
+                            />
+                        </div>
+                        <div class="w-full flex flex-col gap-2">
+                            <label for="email" class="text-primary-100">Your email address</label>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Where do I reach you?"
+                                required
+                                class="bg-primary-900/50 text-primary-50 px-6 h-14 rounded-xl"
+                            />
+                        </div>
+                        <div class="w-full flex flex-col gap-2">
+                            <label for="message" class="text-primary-100">Your message</label>
+                            <textarea
+                                name="message"
+                                required
+                                class="bg-primary-900/50 text-primary-50 px-6 py-2.5 rounded-xl resize-none"
+                                rows="4"
+                                placeholder="What's on your mind?"
+                            >
+                            </textarea>
+                        </div>
+                        <div class="w-full flex items-start mt-2">
+                            <button type="submit" class="bg-primary px-6 py-2 rounded-full text-primary-950">
+                                Submit!
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="size-full bg-primary-900/20 p-4 rounded-xl overflow-hidden relative">
+                        <div class="absolute inset-0 size-full p-1">
+                            <img
+                                src="/profile.png"
+                                alt="Leandro Gomez's profile photo"
+                                class="rounded-lg object-center object-cover size-full"
+                            />
+                        </div>
+                        <div
+                            class="absolute bottom-1 left-1 right-1 rounded-b-lg bg-gradient-to-t from-black/50 to-transparent h-1/2"
+                        >
+                            <div class="size-full flex flex-col justify-end items-center pb-2">
+                                <span class="text-primary-100">You can also find me at</span>
+                                <div class="w-full flex gap-2 flex-center">
+                                    <a
+                                        href={data.linkedin.url}
+                                        target="_blank"
+                                        class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10"
+                                    >
+                                        <Icon name="linkedin" class="text-primary-100" />
+                                    </a>
+                                    <a
+                                        href={data.whatsapp.url}
+                                        target="_blank"
+                                        class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10"
+                                    >
+                                        <Icon name="chat" class="text-primary-100" />
+                                    </a>
+                                    <a
+                                        href={data.instagram.url}
+                                        target="_blank"
+                                        class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10"
+                                    >
+                                        <Icon name="instagram" class="text-primary-100" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Confirmation / Success Page -->
+            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+        </form>
+    </div>
+</div>

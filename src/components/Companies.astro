@@ -1,0 +1,25 @@
+---
+import { t } from "i18next";
+import Heading from "./Heading.astro";
+---
+
+<!-- Companies logos -->
+<h2>
+    <Heading as="h2" title={t("site:experience")} />
+</h2>
+<div class="w-full flex flex-col gap-6">
+    <span class="text-5xl">
+        {t("site:experience-subtitle.0")}
+        <span class="text-primary-100">{t("site:experience-subtitle.1")}</span>
+        {t("site:experience-subtitle.2")}
+    </span>
+    <div class="w-full flex flex-wrap justify-center gap-6">
+        <div class="h-24 w-64 border"></div>
+        <div class="h-24 w-64 border"></div>
+        <div class="h-24 w-64 border"></div>
+        <div class="h-24 w-64 border"></div>
+        <div class="h-24 w-64 border"></div>
+        <div class="h-24 w-64 border"></div>
+        <div class="h-24 w-64 border"></div>
+    </div>
+</div>

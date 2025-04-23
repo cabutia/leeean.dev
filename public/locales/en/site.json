@@ -1,0 +1,23 @@
+{
+    "cv-file": "2025_01_Leandro_EN.pdf",
+    "header": {
+        "hey-there": "Hey there",
+        "im-lean": {
+            "0": "I'm Lean",
+            "1": "a"
+        },
+        "words": ["Software Engineer", "Problem Solver", "Tech Enthusiast", "Team Player"],
+        "get-in-touch": "Let's get in touch!"
+    },
+    "nav": {
+        "my-career": "My Career",
+        "download-cv": "Download my CV",
+        "cta": "Let's chat!"
+    },
+    "experience": "Experience",
+    "experience-subtitle": {
+        "0": "Trusted by",
+        "1": "top-tier",
+        "2": "companies"
+    }
+}

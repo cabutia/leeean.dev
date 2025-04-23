@@ -6,7 +6,6 @@ const { words, id } = Astro.props;
 <span data-typewriter-id={id}>{words[0]}</span>
 
 <script define:vars={{ words, id }}>
-    console.log({ words, id });
     const el = document.querySelector(`[data-typewriter-id="${id}"]`);
 
     let timeoutId = undefined;
@@ -35,7 +34,6 @@ const { words, id } = Astro.props;
             wordIdx = 0;
         }
         if (el) el.innerHTML = word;
-        console.log("lastWrite", write === lastWrite);
         setTimeout(
             () => {
                 process();

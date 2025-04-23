@@ -3,6 +3,8 @@ import Icon from "./Icon.astro";
 import Typewrite from "./Typewrite.astro";
 import HeaderBg from "./HeaderBg.astro";
 import Heading from "./Heading.astro";
+import { t } from "i18next";
+import { data } from "@/data";
 ---
 
 <div class="w-full h-[100vh] bg-background flex-center relative">
@@ -11,20 +13,13 @@ import Heading from "./Heading.astro";
         <div class="w-full flex flex-col">
             <Heading title="Hey there" />
             <h1 class="text-7xl font-bold">
-                I'm Lean, <br />a <span class="text-primary-100"
-                    ><Typewrite
-                        words={[
-                            "Software Engineer",
-                            "Problem Solver",
-                            "Tech Enthusiast",
-                            "Team Player",
-                        ]}
-                        id="title"
-                    /></span
-                >
-                <span
-                    class="h-2 w-10 inline-block relative -left-2 -bottom-2 bg-primary-100 animate-pulse"
-                ></span>
+                {t("site:header.im-lean.0")}
+                <br />
+                {t("site:header.im-lean.1")}
+                <span class="text-primary-100">
+                    <Typewrite words={t("site:header.words", { returnObjects: true }) as string[]} id="title" />
+                </span>
+                <span class="h-2 w-10 inline-block relative -left-2 -bottom-2 bg-primary-100 animate-pulse"></span>
             </h1>
 
             <div class="flex items-center mt-6">
@@ -34,25 +29,14 @@ import Heading from "./Heading.astro";
                 >
                     Let's get in touch
                 </a>
-                <div
-                    class="h-14 -ml-6 pl-8 flex items-center rounded-r-full bg-primary-100/10"
-                >
-                    <a
-                        href="#"
-                        class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10"
-                    >
+                <div class="h-14 -ml-6 pl-8 flex items-center rounded-r-full bg-primary-100/10">
+                    <a href={data.linkedin.url} class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10">
                         <Icon name="linkedin" class="text-primary-50" />
                     </a>
-                    <a
-                        href="#"
-                        class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10"
-                    >
+                    <a href={data.whatsapp.url} class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10">
                         <Icon name="chat" class="text-primary-50" />
                     </a>
-                    <a
-                        href="#"
-                        class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10"
-                    >
+                    <a href={data.instagram.url} class="h-14 rounded-full w-14 flex-center hover:bg-primary-300/10">
                         <Icon name="instagram" class="text-primary-50" />
                     </a>
                 </div>

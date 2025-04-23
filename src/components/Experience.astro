@@ -1,0 +1,23 @@
+---
+import ExperienceBlock from "./ExperienceBlock.astro";
+import type { Experience } from "@/types/shared";
+import MdLine from "./MdLine.astro";
+import MdListItem from "./MdListItem.astro";
+
+const { jobs } = Astro.props;
+---
+
+<!-- Job history -->
+<div class="w-full flex flex-col gap-6 mt-24 lg:px-12 mb-32">
+    {
+        jobs.map(({ details, ...experience }: Experience, idx: number) => (
+            <ExperienceBlock class={idx % 2 === 0 ? "lg:-ml-12" : "lg:ml-12"} {...experience}>
+                {details.map((detail) => (
+                    <MdLine as="p">
+                        <MdListItem>{detail}</MdListItem>
+                    </MdLine>
+                ))}
+            </ExperienceBlock>
+        ))
+    }
+</div>

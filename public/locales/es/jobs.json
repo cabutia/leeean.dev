@@ -1,5 +1,5 @@
 {
-    "experiences": [
+    "list": [
         {
             "company": "Vizio",
             "website": "https://vizio.com",
@@ -105,7 +105,7 @@
         },
         {
             "company": "Estandar Crypto",
-            "website": "https://estand.ar",
+            "website": null,
             "title": "Senior Software Engineer",
             "dates": {
                 "from": "2021-09",

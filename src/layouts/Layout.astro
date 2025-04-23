@@ -1,9 +1,10 @@
 ---
 import "../tailwind.css";
+import { HeadHrefLangs } from "astro-i18next/components";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={Astro.currentLocale}>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
@@ -18,6 +19,7 @@ import "../tailwind.css";
             rel="stylesheet"
         />
         <slot name="head" />
+        <HeadHrefLangs />
     </head>
     <body class="font-body bg-background text-primary-800">
         <slot />

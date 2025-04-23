@@ -3,6 +3,16 @@ import linkedin from "@/assets/icons/linkedin.svg?raw";
 import chat from "@/assets/icons/chat.svg?raw";
 import instagram from "@/assets/icons/instagram.svg?raw";
 import language from "@/assets/icons/language.svg?raw";
+import laravel from "@/assets/icons/tech/laravel.svg?raw";
+import react from "@/assets/icons/tech/react.svg?raw";
+import aws from "@/assets/icons/tech/aws.svg?raw";
+import figma from "@/assets/icons/tech/figma.svg?raw";
+import vue from "@/assets/icons/tech/vue.svg?raw";
+import node from "@/assets/icons/tech/node.svg?raw";
+import svelte from "@/assets/icons/tech/svelte.svg?raw";
+import terraform from "@/assets/icons/tech/terraform.svg?raw";
+import docker from "@/assets/icons/tech/docker.svg?raw";
+import python from "@/assets/icons/tech/python.svg?raw";
 
 const { name, ...attrs } = Astro.props;
 const icons: Record<string, any> = {
@@ -10,6 +20,16 @@ const icons: Record<string, any> = {
     chat,
     instagram,
     language,
+    laravel,
+    react,
+    aws,
+    figma,
+    vue,
+    node,
+    svelte,
+    terraform,
+    docker,
+    python,
 };
 
 const icon = icons[name];

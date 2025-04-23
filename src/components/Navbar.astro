@@ -1,5 +1,7 @@
 ---
 import Icon from "./Icon.astro";
+import { t } from "i18next";
+import { LanguageSelector } from "astro-i18next/components";
 ---
 
 <div class="fixed top-0 left-0 w-full z-20">
@@ -12,14 +14,16 @@ import Icon from "./Icon.astro";
                 </a>
 
                 <div class="h-16 flex-center">
-                    <a href="#" class="h-12 flex-center px-4 text-primary-500">My Career</a>
-                    <a href="#" class="h-12 flex-center px-4 text-primary-500">Download my CV</a>
-                    <a href="#" class="h-12 flex-center gap-1 px-4 text-primary-500">
-                        <Icon name="language" />
-                        <span>ES</span>
+                    <a href="#" class="h-12 flex-center px-4 text-primary-500">{t("site:nav.my-career")}</a>
+                    <a href={`/${t("site:cv-file")}`} target="_blank" class="h-12 flex-center px-4 text-primary-500">
+                        {t("site:nav.download-cv")}
                     </a>
+                    <div class="h-12 flex-center px-4 text-primary-500">
+                        <Icon name="language" />
+                        <LanguageSelector class="text-primary-500" languageMapping={{ es: "ES", en: "EN" }} />
+                    </div>
                     <a href="#" class="h-10 flex-center px-4 bg-primary-500 font-medium text-primary-900 rounded-full">
-                        Let's chat!
+                        {t("site:nav.cta")}
                     </a>
                 </div>
             </div>
