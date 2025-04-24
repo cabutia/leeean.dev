@@ -7,6 +7,7 @@ import MdBold from "@/components/MdBold.astro";
 import MdLine from "@/components/MdLine.astro";
 import MdHeading from "@/components/MdHeading.astro";
 import { filename } from "@/utils/strings";
+import { t } from "i18next";
 
 const { title, company, website, dates, stack, class: classname } = Astro.props;
 ---
@@ -37,14 +38,14 @@ const { title, company, website, dates, stack, class: classname } = Astro.props;
                 </MdLine>
                 <MdLine />
                 <MdLine>
-                    <MdHeading as="h3">Responsabilidades & logros</MdHeading>
+                    <MdHeading as="h3">{t("site:responsabilities")}</MdHeading>
                 </MdLine>
                 <MdLine itemprop="description">
                     <slot />
                 </MdLine>
                 <MdLine />
                 <MdLine>
-                    <MdHeading as="h3">Stack Involucrado</MdHeading>
+                    <MdHeading as="h3">{t("site:involved-stack")}</MdHeading>
                 </MdLine>
                 <MdLine>
                     <ul class="flex gap-x-2 flex-wrap">
