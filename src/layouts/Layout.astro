@@ -20,7 +20,19 @@ import { HeadHrefLangs } from "astro-i18next/components";
         />
         <slot name="head" />
         <HeadHrefLangs />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8TB3B5EHN"></script><script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-B8TB3B5EHN");
+        </script>
     </head>
+
+    <!-- Google tag (gtag.js) -->
+
     <body class="font-body bg-background text-primary-800">
         <slot />
     </body>
