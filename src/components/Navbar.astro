@@ -7,47 +7,62 @@ import { data } from "@/data";
 
 <div class="fixed top-0 left-0 w-full z-20">
     <div class="container mx-auto py-6 px-4 lg:px-8">
-        <div class="h-16 w-full bg-background/70 backdrop-blur-xs rounded-full px-6 border border-background">
-            <div class="w-full h-16 flex justify-between items-center">
+        <div
+            class="h-16 w-full bg-background/70 backdrop-blur-xs rounded-full pl-6 pr-3 lg:px-6 border border-background"
+        >
+            <nav class="w-full h-16 flex justify-between items-center">
                 <a href="#" class="flex items-center text-xl text-primary">
                     <span class="font-bold leading-4">Leeean</span>
                     <span class="leading-4 text-primary-200/50">.dev</span>
                 </a>
 
-                <div class="size-10 lg:hidden" id="mobile-menu-trigger">
-                    <Icon name="menu" />
+                <div class="size-10 lg:hidden flex-center" id="mobile-menu-trigger">
+                    <Icon name="menu" class="size-8 text-primary-200" />
                 </div>
 
                 <!-- Desktop menu -->
                 <div class="flex-center h-16 hidden lg:flex">
-                    <a href={data.permalinks.career} class="h-12 flex-center px-4 text-primary-500">
+                    <a
+                        href={data.permalinks.career}
+                        class="h-12 flex-center px-4 text-primary-300 hover:text-primary-50"
+                    >
                         {t("site:nav.my-career")}
                     </a>
-                    <a href={data.permalinks.techStack} class="h-12 flex-center px-4 text-primary-500">
+                    <a
+                        href={data.permalinks.techStack}
+                        class="h-12 flex-center px-4 text-primary-300 hover:text-primary-50"
+                    >
                         {t("site:nav.tech-stack")}
                     </a>
-                    <a href={`/${t("site:cv-file")}`} target="_blank" class="h-12 flex-center px-4 text-primary-500">
+                    <a
+                        href={`/${t("site:cv-file")}`}
+                        target="_blank"
+                        class="h-12 flex-center px-4 text-primary-300 hover:text-primary-50"
+                    >
                         {t("site:nav.download-cv")}
                     </a>
-                    <div class="h-12 flex-center px-4 text-primary-500">
+                    <div class="h-12 flex-center px-4 text-primary-300 hover:text-primary-50">
                         <Icon name="language" class="size-4 mr-1" />
-                        <LanguageSelector class="text-primary-500" languageMapping={{ es: "ES", en: "EN" }} />
+                        <LanguageSelector
+                            class="text-primary-300 hover:text-primary-50"
+                            languageMapping={{ es: "ES", en: "EN" }}
+                        />
                     </div>
                     <a
                         href={data.permalinks.contact}
-                        class="h-10 flex-center px-4 bg-primary-300 hover:bg-primary-200 text-primary-900 font-medium rounded-full"
+                        class="h-10 flex-center px-4 bg-primary-300 hover:bg-primary-200 text-primary-900 font-medium rounded-full relative -top-0.5 -right-3 shadow-md shadow-primary/40"
                     >
                         {t("site:nav.cta")}
                     </a>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
 </div>
 
 <!-- Mobile menu -->
 <div class="fixed inset-0 top-32 p-4 z-30 lg:hidden transition-all opacity-0 invisible" id="mobile-menu">
-    <div class="size-full flex flex-col bg-black/60 rounded-lg backdrop-blur p-8">
+    <nav class="size-full flex flex-col bg-black/60 rounded-lg backdrop-blur p-8">
         <a href={data.permalinks.career} class="h-20 flex-center px-4 text-primary-200 text-2xl">
             {t("site:nav.my-career")}
         </a>
@@ -67,7 +82,7 @@ import { data } from "@/data";
         >
             {t("site:nav.cta")}
         </a>
-    </div>
+    </nav>
 </div>
 
 <script>
