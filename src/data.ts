@@ -11,4 +11,9 @@ export const data = {
         url: "",
         user: "",
     },
+    permalinks: {
+        techStack: "/#tech-stack",
+        contact: "/#contact",
+        career: "/#job-history",
+    },
 };

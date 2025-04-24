@@ -5,7 +5,7 @@ import { t } from "i18next";
 ---
 
 <!-- Contact form -->
-<div class="w-full flex flex-col">
+<section id="contact" class="w-full flex flex-col justify-center min-h-screen">
     <div class="container mx-auto">
         <form action="https://api.web3forms.com/submit" method="POST" class="w-full">
             <input type="hidden" name="access_key" value="422df993-72da-4e7d-bc80-846002d11743" />
@@ -48,10 +48,14 @@ import { t } from "i18next";
                                 rows="4"
                                 placeholder={t("site:contact.message.placeholder")}
                             >
+                                {""}
                             </textarea>
                         </div>
                         <div class="w-full flex items-start mt-2">
-                            <button type="submit" class="bg-primary px-6 py-2 rounded-full text-primary-950">
+                            <button
+                                type="submit"
+                                class="bg-primary-300 hover:bg-primary-200 px-8 py-3 rounded-full text-primary-900 cursor-pointer"
+                            >
                                 {t("site:contact.submit")}
                             </button>
                         </div>
@@ -103,4 +107,4 @@ import { t } from "i18next";
             <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
         </form>
     </div>
-</div>
+</section>

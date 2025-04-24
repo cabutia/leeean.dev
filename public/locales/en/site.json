@@ -7,11 +7,12 @@
             "1": "a"
         },
         "words": ["Software Engineer", "Problem Solver", "Tech Enthusiast", "Team Player"],
-        "get-in-touch": "Let's get in touch!"
+        "cta": "Let's get in touch!"
     },
     "nav": {
         "my-career": "My Career",
         "download-cv": "Download my CV",
+        "tech-stack": "Tech stack",
         "cta": "Let's chat!"
     },
     "experience": "Experience",
