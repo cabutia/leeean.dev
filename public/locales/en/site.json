@@ -47,5 +47,8 @@
         "find-me-at": "You can also find me at",
         "submit": "Submit!"
     },
-    "whatsapp-message": "Hey Lean! I have a project in mind and would love to work on it with you!"
+    "whatsapp-message": "Hey Lean! I have a project in mind and would love to work on it with you!",
+    "meta": {
+        "description": "I'm a full-stack developer with 10 years of experience in the software industry. Passionate about optimizing processes and user experiences, I focus on solving problems through software and creativity. My approach is always driven by finding the right technology for the specific challenge, ensuring good practices and writing clean, reusable code."
+    }
 }

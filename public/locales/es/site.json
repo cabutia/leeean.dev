@@ -21,5 +21,8 @@
         "1": "primer nivel",
         "2": ""
     },
-    "whatsapp-message": "Hola Lean! tengo un proyecto en mente que me encantaria que llevemos a cabo juntos!"
+    "whatsapp-message": "Hola Lean! tengo un proyecto en mente que me encantaria que llevemos a cabo juntos!",
+    "meta": {
+        "description": "Soy desarrollador fullstack con 10 años de experiencia en el mundo del software. Apasionado por la optimizacion de procesos y experiencias, asi como por la resolucion de problemas a traves del software y la creatividad, siempre con la premisa de las buenas practicas y el codigo limpio y reutilizable."
+    }
 }

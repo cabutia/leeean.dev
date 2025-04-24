@@ -1,6 +1,7 @@
 ---
 import "../tailwind.css";
 import { HeadHrefLangs } from "astro-i18next/components";
+import { t } from "i18next";
 ---
 
 <!doctype html>
@@ -19,7 +20,19 @@ import { HeadHrefLangs } from "astro-i18next/components";
             rel="stylesheet"
         />
         <slot name="head" />
+
+        <!-- SEO Stuff -->
         <HeadHrefLangs />
+        <meta name="description" content={t("site:meta.description")} />
+
+        <meta property="og:title" content="Leeean.dev | Software Engineer" />
+        <meta property="og:description" content={t("site:meta.description")} />
+        <meta property="og:url" content="https://leeean.dev" />
+
+        <meta name="twitter:title" content="Leeean.dev | Software Engineer" />
+        <meta name="twitter:description" content={t("site:meta.description")} />
+        <meta name="twitter:card" content="summary" />
+        <!-- END: SEO Stuff -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8TB3B5EHN"></script><script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
