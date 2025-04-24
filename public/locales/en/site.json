@@ -19,5 +19,31 @@
         "0": "Trusted by",
         "1": "top-tier",
         "2": "companies"
+    },
+    "tech-stack": "Tech Stack",
+    "tech-stack-subtitle": {
+        "0": "For",
+        "1": "every",
+        "2": "situation"
+    },
+    "contact-title": {
+        "0": "I'd love to hear from you",
+        "1": "Let's get in touch!"
+    },
+    "contact": {
+        "name": {
+            "label": "Your name",
+            "placeholder": "What's your name?"
+        },
+        "email": {
+            "label": "Your email address",
+            "placeholder": "Where do I reach you?"
+        },
+        "message": {
+            "label": "Your message",
+            "placeholder": "What's on your mind?"
+        },
+        "find-me-at": "You can also find me at",
+        "submit": "Submit!"
     }
 }
