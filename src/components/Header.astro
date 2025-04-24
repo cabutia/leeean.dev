@@ -9,8 +9,8 @@ import { data } from "@/data";
 
 <div class="w-full h-screen bg-background flex-center relative">
     <HeaderBg class="absolute inset-0" />
-    <div class="container px-8 mx-auto relative z-10">
-        <div class="w-full flex flex-col gap-2">
+    <div class="container px-8 mx-auto relative flex justify-between z-10 flex-col-reverse md:flex-row">
+        <div class="w-full lg:w-3/4 flex flex-col gap-2">
             <Heading title="Hey there" />
             <h1 class="text-5xl lg:text-7xl font-bold min-h-[3em]">
                 {t("site:header.im-lean.0")}
@@ -41,6 +41,39 @@ import { data } from "@/data";
                         <Icon name="instagram" class="text-primary-50" />
                     </a>
                 </div>
+            </div>
+        </div>
+        <div class="w-full md:w-1/4 aspect-square flex-shrink-0 relative scale-[0.8] md:scale-[1]">
+            <div class="absolute inset-0 flex-center animate-profile-decor-1">
+                <img src="/path.webp" class="size-full" animate-pulse />
+                <div class="size-8 absolute top-[14.5%] left-[8.5%] flex-center animate-pulse">
+                    <div class="size-6">
+                        <Icon name="laravel" />
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-0 flex-center animate-profile-decor-2">
+                <img src="/path.webp" class="size-[80%] animate-pulse" />
+                <div class="size-8 absolute top-[21.5%] left-[15.5%] flex-center animate-pulse">
+                    <div class="size-6">
+                        <Icon name="react" />
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-0 flex-center animate-profile-decor-3">
+                <img src="/path.webp" class="size-[60%] animate-pulse" />
+                <div class="size-8 absolute top-[29%] left-[22%] flex-center animate-pulse">
+                    <div class="size-6">
+                        <Icon name="node" />
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-0 flex-center">
+                <img
+                    src="/profile.png"
+                    alt="Leeean.dev"
+                    class="size-[40%] object-cover object-center rounded-full border-4 border-primary shadow-xl shadow-primary/20"
+                />
             </div>
         </div>
     </div>

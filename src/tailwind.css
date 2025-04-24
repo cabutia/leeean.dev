@@ -41,7 +41,6 @@
 
     /* Animations */
     --animate-blink: blink 1s infinite;
-
     @keyframes blink {
         0% {
             opacity: 0;
@@ -51,6 +50,36 @@
         }
         100% {
             opacity: 0;
+        }
+    }
+
+    --profile-decor-anim-duration: 3s;
+    --animate-profile-decor-1: profile-decor-1 10s linear infinite;
+    --animate-profile-decor-2: profile-decor-2 8s linear infinite;
+    --animate-profile-decor-3: profile-decor-3 9s linear infinite;
+
+    @keyframes profile-decor-1 {
+        0% {
+            transform: rotate(0deg) scaleX(-1);
+        }
+        100% {
+            transform: rotate(360deg) scaleX(-1);
+        }
+    }
+    @keyframes profile-decor-2 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+    @keyframes profile-decor-3 {
+        0% {
+            transform: rotate(90deg) scaleX(-1);
+        }
+        100% {
+            transform: rotate(450deg) scaleX(-1);
         }
     }
 }
