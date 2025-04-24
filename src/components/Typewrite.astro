@@ -3,7 +3,7 @@ const WRITE_DELAY = 300;
 const { words, id } = Astro.props;
 ---
 
-<span data-typewriter-id={id}>{words[0]}</span>
+<span data-typewriter-id={id} class="cursor">{words[0]}</span>
 
 <script define:vars={{ words, id }}>
     const el = document.querySelector(`[data-typewriter-id="${id}"]`);

@@ -5,18 +5,18 @@ const { title } = Astro.props;
 ---
 
 <div class="w-full flex flex-col bg-gradient-to-b from-[rgba(13,28,38,1)] via-terminal-black to-transparent rounded-lg">
-    <div class="h-12 w-full flex border-b border-b-neutral-700/20 items-center justify-between pr-6 pl-5">
-        <div class="flex items-center gap-3">
-            <div class="size-3.5 flex-shrink-0 rounded-full bg-red-400"></div>
-            <div class="size-3.5 flex-shrink-0 rounded-full bg-orange-300"></div>
-            <div class="size-3.5 flex-shrink-0 rounded-full bg-green-400"></div>
+    <div class="h-8 lg:h-12 w-full flex border-b border-b-neutral-700/20 items-center justify-between pr-6 pl-5">
+        <div class="flex items-center gap-1 lg:gap-3">
+            <div class="size-2 lg:size-3.5 flex-shrink-0 rounded-full bg-red-400"></div>
+            <div class="size-2 lg:size-3.5 flex-shrink-0 rounded-full bg-orange-300"></div>
+            <div class="size-2 lg:size-3.5 flex-shrink-0 rounded-full bg-green-400"></div>
         </div>
-        <span class="text-sm text-terminal-white/75">
+        <span class="lg:visible invisible text-sm text-terminal-white/75">
             {title}
             <span class="opacity-50">took {randomTime()}</span>
         </span>
     </div>
-    <div class="w-full p-6">
+    <div class="w-full p-4 lg:p-6 text-sm lg:text-base">
         <slot />
     </div>
 </div>

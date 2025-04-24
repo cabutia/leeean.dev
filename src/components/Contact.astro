@@ -2,22 +2,23 @@
 import { data } from "@/data";
 import Icon from "./Icon.astro";
 import { t } from "i18next";
+import Container from "./Container.astro";
 ---
 
 <!-- Contact form -->
 <section id="contact" class="w-full flex flex-col justify-center min-h-screen">
-    <div class="container mx-auto">
+    <Container>
         <form action="https://api.web3forms.com/submit" method="POST" class="w-full">
             <input type="hidden" name="access_key" value="422df993-72da-4e7d-bc80-846002d11743" />
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
 
-            <div class="w-full flex flex-col gap-12">
-                <h3 class="text-5xl">
-                    {t("site:contact-title.0")}<br /><span class="text-primary-100 text-6xl">
+            <div class="w-full flex flex-col items-center lg:items-start gap-6 lg:gap-12">
+                <h3 class="text-2xl lg:text-5xl">
+                    {t("site:contact-title.0")}<br /><span class="text-primary-100 text-3xl lg:text-6xl">
                         {t("site:contact-title.1")} 👌🏽
                     </span>
                 </h3>
-                <div class="bg-primary-900/20 p-12 rounded-3xl grid grid-cols-2 gap-8">
+                <div class="bg-primary-900/20 w-full p-6 lg:p-12 rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div class="w-full flex flex-col gap-4">
                         <div class="w-full flex flex-col gap-2">
                             <label for="name" class="text-primary-100">{t("site:contact.name.label")}</label>
@@ -44,24 +45,25 @@ import { t } from "i18next";
                             <textarea
                                 name="message"
                                 required
-                                class="bg-primary-900/50 text-primary-50 px-6 py-2.5 rounded-xl resize-none"
+                                class="bg-primary-900/50 placeholder-primary-50 text-primary-50 px-6 py-2.5 rounded-xl resize-none"
                                 rows="4"
                                 placeholder={t("site:contact.message.placeholder")}
                             >
-                                {""}
                             </textarea>
                         </div>
                         <div class="w-full flex items-start mt-2">
                             <button
                                 type="submit"
-                                class="bg-primary-300 hover:bg-primary-200 px-8 py-3 rounded-full text-primary-900 cursor-pointer"
+                                class="bg-primary-300 hover:bg-primary-200 px-8 py-3 rounded-full text-primary-900 cursor-pointer w-full lg:w-auto"
                             >
                                 {t("site:contact.submit")}
                             </button>
                         </div>
                     </div>
 
-                    <div class="size-full bg-primary-900/20 p-4 rounded-xl overflow-hidden relative">
+                    <div
+                        class="w-full aspect-square lg:size-full bg-primary-900/20 p-4 rounded-xl overflow-hidden relative"
+                    >
                         <div class="absolute inset-0 size-full p-1">
                             <img
                                 src="/profile.png"
@@ -69,10 +71,10 @@ import { t } from "i18next";
                                 class="rounded-lg object-center object-cover size-full"
                             />
                         </div>
-                        <div
-                            class="absolute bottom-1 left-1 right-1 rounded-b-lg bg-gradient-to-t from-black/50 to-transparent h-1/2"
-                        >
-                            <div class="size-full flex flex-col justify-end items-center pb-2">
+                        <div class="absolute inset-1 md:top-auto rounded-b-lg p-4">
+                            <div
+                                class="size-full flex flex-col justify-center items-center pb-2 pt-4 rounded bg-black/50 md:backdrop-blur-xs"
+                            >
                                 <span class="text-primary-100">{t("site:contact.find-me-at")}</span>
                                 <div class="w-full flex gap-2 flex-center">
                                     <a
@@ -106,5 +108,5 @@ import { t } from "i18next";
             <!-- Custom Confirmation / Success Page -->
             <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
         </form>
-    </div>
+    </Container>
 </section>

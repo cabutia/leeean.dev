@@ -53,3 +53,13 @@
         }
     }
 }
+
+.cursor::after {
+    content: "_";
+    @apply animate-blink;
+}
+
+html,
+body {
+    @apply w-screen overflow-x-hidden;
+}

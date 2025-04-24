@@ -9,8 +9,7 @@ const { company } = Astro.props;
         <span class="text-terminal-green">@</span>
         <span class="text-terminal-green">{company}</span>
     </span>
-    <span>
+    <span class="block lg:inline cursor" style="overflow-wrap: anywhere">
         <slot />
-        <span class="animate-blink">_</span>
     </span>
 </span>
