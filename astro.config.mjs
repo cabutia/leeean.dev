@@ -5,7 +5,6 @@ import { fileURLToPath } from "url";
 import path from "path";
 import cloudflare from "@astrojs/cloudflare";
 import astroI18next from "astro-i18next";
-import icon from "astro-icon";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -20,5 +19,5 @@ export default defineConfig({
         },
     },
     adapter: cloudflare(),
-    integrations: [astroI18next(), icon()],
+    integrations: [astroI18next()],
 });
