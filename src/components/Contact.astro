@@ -20,15 +20,27 @@ import Container from "./Container.astro";
                 </h3>
                 <div class="bg-primary-900/20 w-full p-6 lg:p-12 rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div class="w-full flex flex-col gap-4">
-                        <div class="w-full flex flex-col gap-2">
-                            <label for="name" class="text-primary-100">{t("site:contact.name.label")}</label>
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder={t("site:contact.name.placeholder")}
-                                required
-                                class="bg-primary-900/50 text-primary-50 px-6 h-14 rounded-xl"
-                            />
+                        <div class="w-full flex gap-6">
+                            <div class="w-full flex flex-col gap-2">
+                                <label for="name" class="text-primary-100">{t("site:contact.name.label")}</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder={t("site:contact.name.placeholder")}
+                                    required
+                                    class="bg-primary-900/50 text-primary-50 px-6 h-14 rounded-xl"
+                                />
+                            </div>
+                            <div class="w-full flex flex-col gap-2">
+                                <label for="company" class="text-primary-100">{t("site:contact.company.label")}</label>
+                                <input
+                                    type="text"
+                                    name="company"
+                                    placeholder={t("site:contact.company.placeholder")}
+                                    required
+                                    class="bg-primary-900/50 text-primary-50 px-6 h-14 rounded-xl"
+                                />
+                            </div>
                         </div>
                         <div class="w-full flex flex-col gap-2">
                             <label for="email" class="text-primary-100">{t("site:contact.email.label")}</label>

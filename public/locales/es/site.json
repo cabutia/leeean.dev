@@ -7,19 +7,51 @@
             "1": "un"
         },
         "words": ["Software Engineer", "Problem Solver", "Tech Enthusiast", "Team Player"],
-        "get-in-touch": "Hablemos!"
+        "get-in-touch": "Pedi tu cotizacion gratis ahora!",
+        "headline": "Tu presencia online merece más que una plantilla genérica. Mi equipo y yo estamos listos para crear sitios web a medida que no solo se vean bien, sino que realmente trabajen para hacer crecer tu negocio, convertir visitantes y destacar tu marca. Construyamos algo increíble juntos."
     },
     "nav": {
+        "services": "Servicios",
         "my-career": "Mi carrera",
         "download-cv": "Descargar mi CV",
         "tech-stack": "Tech stack",
-        "cta": "Hablemos!"
+        "cta": "Contratanos!"
     },
     "experience": "Experiencia",
     "experience-subtitle": {
         "0": "Colabore con empresas de",
         "1": "primer nivel",
         "2": ""
+    },
+    "tech-stack": "Tech Stack",
+    "tech-stack-subtitle": {
+        "0": "Para",
+        "1": "cada",
+        "2": "situacion"
+    },
+    "contact-title": {
+        "0": "Me encantaria saber de vos",
+        "1": "Pongamonos en contacto!"
+    },
+    "contact": {
+        "name": {
+            "label": "Tu nombre",
+            "placeholder": "Como te llamas?"
+        },
+        "email": {
+            "label": "Tu correo electronico",
+            "placeholder": "Donde te contacto?"
+        },
+        "message": {
+            "label": "Tu mensaje",
+            "placeholder": "Que estas pensando?"
+        },
+        "company": {
+            "label": "Tu empresa",
+            "placeholder": "Cual es el nombre de tu empresa?"
+        },
+        "find-me-at": "Tambien me podes encontrar en",
+        "submit": "Enviar!"
     },
     "whatsapp-message": "Hola Lean! tengo un proyecto en mente que me encantaria que llevemos a cabo juntos!",
     "responsabilities": "Responsabilidades & logros",

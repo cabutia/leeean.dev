@@ -10,9 +10,9 @@ import { data } from "@/data";
 <div class="w-full h-screen bg-background flex-center relative">
     <HeaderBg class="absolute inset-0" />
     <div class="container px-8 mx-auto relative flex justify-between z-10 flex-col-reverse md:flex-row">
-        <div class="w-full lg:w-3/4 flex flex-col gap-2">
-            <Heading title="Hey there" />
-            <h1 class="text-5xl lg:text-7xl font-bold min-h-[3em]">
+        <div class="w-full lg:w-1/2 flex flex-col gap-2">
+            <Heading title={t("site:header.hey-there")} />
+            <h1 class="text-7xl lg:text-8xl lg:leading-20 min-h-[3em] lg:min-h-auto font-brand">
                 {t("site:header.im-lean.0")}
                 <br />
                 {t("site:header.im-lean.1")}
@@ -21,7 +21,11 @@ import { data } from "@/data";
                 </span>
             </h1>
 
-            <div class="flex flex-col gap-4 md:gap-0 md:flex-row items-center mt-12 md:mt-6">
+            <p class="text-primary-100 text-xl leading-8">
+                {t("site:header.headline")}
+            </p>
+
+            <div class="flex flex-col gap-4 md:gap-0 md:flex-row items-center mt-12 md:mt-8">
                 <a
                     href="#"
                     class="h-14 px-6 flex-center rounded-full bg-primary-300 text-primary-900 font-medium tracking-wider hover:bg-primary-200 whitespace-nowrap shadow-lg shadow-primary/40"
@@ -43,7 +47,7 @@ import { data } from "@/data";
                 </div>
             </div>
         </div>
-        <div class="w-full md:w-1/4 aspect-square flex-shrink-0 relative scale-[0.8] md:scale-[1]">
+        <div class="w-full md:w-1/4 aspect-square flex-shrink-0 relative scale-[0.7] mt-8 lg:mt-0 md:scale-[1]">
             <div class="absolute inset-0 flex-center animate-profile-decor-1">
                 <img src="/path.webp" class="size-full" animate-pulse />
                 <div class="size-8 absolute top-[14.5%] left-[8.5%] flex-center animate-pulse">

@@ -13,12 +13,15 @@ import { t } from "i18next";
         <meta name="generator" content={Astro.generator} />
         <title>Leeean.dev | Software Engineer</title>
 
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Extra head stuff slot -->
         <slot name="head" />
 
         <!-- SEO Stuff -->
@@ -36,7 +39,8 @@ import { t } from "i18next";
         <meta name="twitter:description" content={t("site:meta.description")} />
         <meta name="twitter:card" content="summary" />
         <!-- END: SEO Stuff -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8TB3B5EHN"></script><script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8TB3B5EHN"></script>
+        <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
                 dataLayer.push(arguments);

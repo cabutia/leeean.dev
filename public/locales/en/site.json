@@ -7,13 +7,15 @@
             "1": "a"
         },
         "words": ["Software Engineer", "Problem Solver", "Tech Enthusiast", "Team Player"],
-        "cta": "Let's get in touch!"
+        "cta": "Get a free quote now!",
+        "headline": "Your online presence deserves more than just a template. My team and I are ready to build custom websites that don't just look good—they work hard to grow your business, convert visitors, and make you stand out. Let's build something great together."
     },
     "nav": {
+        "services": "Services",
         "my-career": "My Career",
         "download-cv": "Download my CV",
         "tech-stack": "Tech stack",
-        "cta": "Let's chat!"
+        "cta": "Hire us!!"
     },
     "experience": "Experience",
     "experience-subtitle": {
@@ -43,6 +45,10 @@
         "message": {
             "label": "Your message",
             "placeholder": "What's on your mind?"
+        },
+        "company": {
+            "label": "Company name",
+            "placeholder": "What's your company name?"
         },
         "find-me-at": "You can also find me at",
         "submit": "Submit!"

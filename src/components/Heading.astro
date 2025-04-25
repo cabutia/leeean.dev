@@ -1,9 +1,9 @@
 ---
-const { title, as = "span" } = Astro.props;
+const { title, as = "span", class: classNames } = Astro.props;
 
 const Tag = as;
 ---
 
-<Tag class="lg:text-xl tracking-wider uppercase text-primary-200/75">
+<Tag class={`lg:text-xl tracking-wider uppercase text-primary-200/75 ${classNames}`}>
     {title}
 </Tag>

@@ -37,7 +37,8 @@
     --color-terminal-white: #ffffff;
 
     /* Font customization */
-    --font-body: "Faculty Glyphic";
+    --font-body: "Montserrat";
+    --font-brand: "Bebas Neue";
 
     /* Animations */
     --animate-blink: blink 1s infinite;
